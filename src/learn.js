@@ -1,24 +1,28 @@
-export default function findSumA(a, b){
+// export default function findSumA(a, b){
 
-    return a + b
+//     return a + b
 
-}
+// }
 
-export const findSumB = (a,b) => {
-    return a + b
-}
+// export const findSumB = (a,b) => {
+//     return a + b
+// }
 
-// Anon funcs
+// // Anon funcs
 
-<button onClick = {() => {
+// <button onClick = {() => {
 
-    console.log("hello world")
-}}>
+//     console.log("hello world")
+// }}>
 
-</button>
+// </button>
 
-// terniary operators
+// // terniary operators
 
 let age = 18;
-let status = age < 18 && "minor";
+let status = age < 18 ? "minor" : "major";
 console.log(status);
+
+const Component = () => {
+    return age < 18 ? "minor" : "major";
+}
