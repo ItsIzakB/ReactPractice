@@ -1,10 +1,10 @@
-export default function findSum(a, b){
+export default function findSumA(a, b){
 
     return a + b
 
 }
 
-export const findSum = (a,b) => {
+export const findSumB = (a,b) => {
     return a + b
 }
 
@@ -20,4 +20,5 @@ export const findSum = (a,b) => {
 // terniary operators
 
 let age = 18;
-let status = age < 18 && minor
+let status = age < 18 && "minor";
+console.log(status);
