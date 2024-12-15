@@ -19,9 +19,9 @@
 
 // // terniary operators
 
-let age = 18;
-let status = age < 18 ? "minor" : "major";
-console.log(status);
+// const age = 21;
+// let status = age < 18 ? "minor" : "major";
+// console.log(status);
 
 const Component = () => {
     return age < 18 ? "minor" : "major";
@@ -29,6 +29,8 @@ const Component = () => {
 
 const person = {
     name: "Kazi Priom",
-    age: 21,
+    age,
     isMarried: false,
 };
+
+const {name, age, isMarried} = person;
