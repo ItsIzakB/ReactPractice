@@ -15,6 +15,9 @@ export const findSum = (a,b) => {
     console.log("hello world")
 }}>
 
-
-
 </button>
+
+// terniary operators
+
+let age = 18;
+let status = age < 18 && minor
