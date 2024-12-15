@@ -1,9 +1,9 @@
-function findSum(a, b){
+export default function findSum(a, b){
 
     return a + b
 
 }
 
-const findSum = (a,b) => {
+export const findSum = (a,b) => {
     return a + b
 }
