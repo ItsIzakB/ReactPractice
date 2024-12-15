@@ -26,3 +26,9 @@ console.log(status);
 const Component = () => {
     return age < 18 ? "minor" : "major";
 }
+
+const person = {
+    name: "Kazi Priom",
+    age: 21,
+    isMarried: false,
+};
