@@ -23,13 +23,13 @@
 // let status = age < 18 ? "minor" : "major";
 // console.log(status);
 
-const Component = () => {
-    return age < 18 ? "minor" : "major";
-}
+// const Component = () => {
+//     return age < 18 ? "minor" : "major";
+// }
 
 const person = {
     name: "Kazi Priom",
-    age,
+    age = 28,
     isMarried: false,
 };
 
@@ -52,3 +52,5 @@ names.filter((name) => {
     return name == "Kazi";
 
 });
+
+
