@@ -37,3 +37,11 @@ const {name, age, isMarried} = person;
 const person2 = {...person, name: "Jack"};
 const names = ["Kazi", "Jack", "John"];
 const names2 = [...names, "James"];
+
+
+names2.map((name) => {
+
+    
+
+
+});
