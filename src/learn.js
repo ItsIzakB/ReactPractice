@@ -44,7 +44,11 @@ names2.map((name) => {
 
     return name + "1";
 
-    console.log(name);
 
 });
 
+names.filter((name) => {
+
+    return name == "Kazi";
+
+});
