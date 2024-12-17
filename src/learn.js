@@ -34,3 +34,4 @@ const person = {
 };
 
 const {name, age, isMarried} = person;
+const person2 = {...person};
