@@ -29,7 +29,7 @@
 
 const person = {
     name: "Kazi Priom",
-    age = 28,
+    age: 28,
     isMarried: false,
 };
 
