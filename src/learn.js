@@ -41,7 +41,10 @@ const names2 = [...names, "James"];
 
 names2.map((name) => {
 
-    
+
+return name + "1"
+
 
 
 });
+
