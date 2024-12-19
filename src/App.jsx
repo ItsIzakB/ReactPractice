@@ -11,10 +11,13 @@ export default function App(){
   </form>
   <h1 className>Todo List</h1>
   <ul className="list">
-    <label>
-      <input type = "checkbox" />
-    </label>
-
+    <li>
+      <label>
+        <input type = "checkbox" />
+       Item 1
+      </label>
+      <button className = "btn btn-danger">Delete</button>
+    </li>
   </ul>
 
   </>
