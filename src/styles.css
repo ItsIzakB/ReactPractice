@@ -15,16 +15,19 @@
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
+    padding-top: 1rem;
   }
   
   .form-row {
     display: flex;
     flex-direction: column;
-    gap: 0.1rem;
+    gap: 1rem;
+    padding-top: 1rem;
   }
   
   .btn {
     background: hsl(200, 100%, 50%, 0.1);
+    width: 100%;
     border: 1px solid hsl(200, 100%, 50%);
     color: hsl(200, 100%, 50%);
     padding: 0.25em 0.5em;
