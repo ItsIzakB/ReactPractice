@@ -11,7 +11,9 @@ export default function App(){
   </form>
   <h1 className>Todo List</h1>
   <ul className="list">
-    <label></label>
+    <label>
+      <input type = "checkbox" />
+    </label>
 
   </ul>
 
