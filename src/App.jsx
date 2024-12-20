@@ -1,6 +1,7 @@
 import "./styles.css"
 export default function App(){
   const[newItem, setNewItem] = useState("")
+  setNewItem("hi")
   return (
     <>
   <form classNames = "new-item-form">
