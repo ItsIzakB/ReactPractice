@@ -7,6 +7,7 @@ export default function App(){
 
 
   function handleSubmit (e){
+    e.preventDefault;
 
   }
 
