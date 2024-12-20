@@ -2,6 +2,14 @@ import {useState} from "react"
 import "./styles.css"
 export default function App(){
   const [newItem, setNewItem] = useState("")
+
+
+
+  function handleSubmit (e){
+    
+  }
+
+  
   return (
     <>
   <form classNames onSubmit = {handleSubmit} className= "new-item-form">
