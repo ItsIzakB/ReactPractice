@@ -17,14 +17,13 @@ export default function App(){
       ]
     })
 
-
-
   }
+  console.log(todos)
 
   
   return (
     <>
-  <form classNames onSubmit = {handleSubmit} className= "new-item-form">
+  <form onSubmit = {handleSubmit} className= "new-item-form">
     <div className="form-row">
       <label htmlFor="item">New Item</label>
       <input 
