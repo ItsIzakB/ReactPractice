@@ -1,13 +1,13 @@
+import {useState} from "react"
 import "./styles.css"
 export default function App(){
-  const[newItem, setNewItem] = useState("")
-  setNewItem("hi")
+  const [newItem, setNewItem] = useState("testing")
   return (
     <>
   <form classNames = "new-item-form">
     <div className="form-row">
       <label htmlFor="item">New Item</label>
-      <input value = {newItem} type="text" id ="item" />
+      <input value={newItem} type="text" id ="item" />
     </div>
     <button className="btn">Add</button>
   </form>
