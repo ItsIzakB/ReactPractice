@@ -2,12 +2,12 @@ import {useState} from "react"
 import "./styles.css"
 export default function App(){
   const [newItem, setNewItem] = useState("")
-  const [todos, setTodos] = useState("")
+  const [todos, setTodos] = useState([])
 
 
 
   function handleSubmit (e){
-    e.preventDefault;
+    e.preventDefault();
 
     setTodos(currentTodos => {
 
@@ -47,9 +47,7 @@ export default function App(){
  
 
       )
-    }
-
-    )}
+    })}
  </ul>
 
   </>
