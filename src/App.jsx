@@ -17,6 +17,8 @@ export default function App(){
       ]
     })
 
+    setNewItem("");
+
   }
 
   
@@ -39,7 +41,8 @@ export default function App(){
       return(
         <li key={todo.id}>
           <label>
-            <input type = "checkbox" checked={todo.completed}/>
+            <input type = "checkbox" checked={todo.completed}
+            onChange={toggleTodos}/>
           {todo.title}
           </label>
           <button className = "btn btn-danger">Delete</button>
