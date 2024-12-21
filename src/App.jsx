@@ -66,7 +66,8 @@ export default function App(){
           onChange={e =>toggleTodos(todo.id,e.target_checked)}/>
           {todo.title}
           </label>
-          <button onClick ={deleteTodo(todo.id)} className = "btn btn-danger">Delete</button>
+          <button onClick ={() => deleteTodo(todo.id)}
+                  className = "btn btn-danger">Delete</button>
         </li>
  
 
