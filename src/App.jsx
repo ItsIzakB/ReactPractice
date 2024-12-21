@@ -45,7 +45,7 @@ export default function App(){
         <li key={todo.id}>
           <label>
             <input type = "checkbox" checked={todo.completed}
-            onChange={toggleTodos}/>
+          onChange={e =>toggleTodos(todo.id,e.target_checked)}/>
           {todo.title}
           </label>
           <button className = "btn btn-danger">Delete</button>
