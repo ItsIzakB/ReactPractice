@@ -1,6 +1,7 @@
 import {useState} from "react"
 import "./styles.css"
-import NewTodoForm from "./NewTodoForm"
+import {NewTodoForm} from "./NewTodoForm"
+
 export default function App(){
   const [todos, setTodos] = useState([])
 
@@ -27,9 +28,9 @@ export default function App(){
 
   
   return (
-    <>
+  <>
 
-  <NewTodoForm/>
+  <NewTodoForm />
   <h1 className>Todo List</h1>
   <ul className="list">
     {todos.length === 0 && "No Todos"}
