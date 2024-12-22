@@ -1,19 +1,16 @@
   export function NewTodoForm(){
 
     const [newItem, setNewItem] = useState("")
+    function handleSubmit (e){
+        e.preventDefault();
 
+        setTodos(currentTodos => {
 
-   
-  function handleSubmit (e){
-    e.preventDefault();
-
-    setTodos(currentTodos => {
-
-      return [
-        ...currentTodos, {id: crypto.randomUUID, title: newItem, completed:
-        false},
-      ]
-    })
+        return [
+            ...currentTodos, {id: crypto.randomUUID, title: newItem, completed:
+            false},
+        ]
+        })
 
     setNewItem("");
 
