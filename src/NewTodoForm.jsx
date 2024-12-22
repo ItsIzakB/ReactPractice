@@ -1,4 +1,6 @@
   export function NewTodoForm(){
+
+    const [newItem, setNewItem] = useState("")
     return(
     <form onSubmit = {handleSubmit} className= "new-item-form">
         <div className="form-row">
