@@ -11,7 +11,6 @@ export function NewTodoForm({ onSubmit }) {
 
     setNewItem("")
   }
-
   return (
     <form onSubmit={handleSubmit} className="new-item-form">
       <div className="form-row">
