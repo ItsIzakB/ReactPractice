@@ -1,4 +1,4 @@
-export default TodoList({ todos }){
+export default function TodoList({ todos }){
 
     return ( <ul className="list">
     {todos.length === 0 && "No Todos"}
@@ -21,7 +21,7 @@ export default TodoList({ todos }){
 
 
 
- </ul> 
-)
+    </ul> 
+    )
 
 }
