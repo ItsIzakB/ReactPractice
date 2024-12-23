@@ -1,4 +1,4 @@
-export default TodoList(id){
+export default TodoList({ todos }){
 
     return ( <ul className="list">
     {todos.length === 0 && "No Todos"}
@@ -7,16 +7,17 @@ export default TodoList(id){
         <li key={todo.id}>
           <label>
             <input type = "checkbox" checked={todo.completed}
-          onChange={e =>toggleTodos(todo.id,e.target_checked)}/>
+        //   onChange={e =>toggleTodos(todo.id,e.target_checked)}
+        />
           {todo.title}
           </label>
-          <button onClick ={() => deleteTodo(todo.id)}
+        //   <button onClick ={() => deleteTodo(todo.id)}
                   className = "btn btn-danger">Delete</button>
         </li>
  
 
       )
-    )}
+    })}
 
 
 
