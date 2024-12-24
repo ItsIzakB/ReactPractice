@@ -33,7 +33,7 @@ export default function App(){
 
   <NewTodoForm />
   <h1 className="header">Todo List</h1>
-  <TodoList todos={todos}/>
+  <TodoList todos={todos} toggleTodo = {toggleTodo}/>
 
 
   </>
