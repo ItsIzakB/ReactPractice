@@ -5,7 +5,10 @@ import {TodoList} from "./TodoList"
 
 export default function App(){
   const [todos, setTodos] = useState([])
+  
+  useEffect(() => {
 
+  },[todos])
   function toggleTodos (id, completed){
     setTodos(currentTodos => {
       return currentTodos.map(todo => {
@@ -33,7 +36,7 @@ export default function App(){
 
   <NewTodoForm />
   <h1 className="header">Todo List</h1>
-  <TodoList todos={todos} toggleTodo = {toggleTodo}/>
+  <TodoList todos={todos} toggleTodo = {toggleTodo} deleteTodo={deleteTodo}/>
 
 
   </>
