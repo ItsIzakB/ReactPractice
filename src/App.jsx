@@ -7,7 +7,7 @@ export default function App(){
   const [todos, setTodos] = useState([])
   
   useEffect(() => {
-
+    localStorage.setItem("ITEMS", JSON.stringify(todos))
   },[todos])
   function toggleTodos (id, completed){
     setTodos(currentTodos => {
