@@ -1,17 +1,17 @@
-export function TodoItem(){
-    return(
-    <li>
+export function TodoItem({ completed, id, title, toggleTodo, deleteTodo }) {
+    return (
+      <li>
         <label>
-            <input
-                type="checkbox"
-                checked={todo.complete}
-                
-            />
-            {todo.title}
+          <input
+            type="checkbox"
+            checked={completed}
+            onChange={e => toggleTodo(id, e.target.checked)}
+          />
+          {title}
         </label>
-        
-
-
-    </li>
+        <button onClick={() => deleteTodo(id)} className="btn btn-danger">
+          Delete
+        </button>
+      </li>
     )
-}
+  }
