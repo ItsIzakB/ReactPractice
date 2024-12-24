@@ -6,6 +6,9 @@ import {TodoList} from "./TodoList"
 export default function App(){
   const [todos, setTodos] = useState(() =>{
     const localValue = localStorage.getItem("ITEMS")
+    if (localValue == null) return []
+
+    return JSON.parse(localValue)
   })
   
   useEffect(() => {
